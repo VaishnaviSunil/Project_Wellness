@@ -1,0 +1,418 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="{% static 'styles/mystyles.css' %}"> -->
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/styles/mystyles.css">
+  <script src="https://kit.fontawesome.com/fd0c1a963b.js" crossorigin="anonymous"></script>
+</head>
+{% block header %}
+
+{% endblock %}
+
+
+<body>
+  <div class="container-fluid">
+    
+
+    <!--------------------------------------NAVBAR-------------------------------------------->
+
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-inverse-lg bg-light w-100" style="z-index :1; position :fixed">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">VIMOKSHA</a>
+
+            <div class="p-3" style="display: flex;">
+            
+              <h4><a href="" class="p-3"><i class="fa-brands fa-facebook-f"></i></a></h4>
+              <h4><a href="" class="p-3"><i class="fa-brands fa-instagram"></i></a></h4>
+              <h4><a href="" class="p-3"><i class="fa-brands fa-linkedin"></i></a></h4>
+              <h4><a href="" class="p-3"  ><i class="fa-solid fa-magnifying-glass"></i></a></h4>
+            </div>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item ">
+                  <a class="nav-link active" aria-current="page" href="#">ABOUT VIMOKSHA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">RETREATS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HEALTH & WELLBEING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SPA & WELLNESS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ROOMS & SUITES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">THE RESTAURANT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PLANT FOR THE PLANET</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">BLOGS</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><button>BOOK NOW</button></a>
+                </li>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+
+  {% block content %}
+  {% endblock %}
+
+  <!--------------------------------------NAVBAR-------------------------------------------->
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> -->
+            <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'images/pinkflower.jpg' %}" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>The Ultimate Wellness Retreat Destination</h1>
+                <p>DISCOVER. HEAL. REVIVE.</p>
+                <button> BOOK NOW </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <img src="/static/images/pinky.jpg" class="w-100 h-100" alt="">
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-7 mt-5 pt-5">
+        <p>ABOUT VIMOKSHA</p>
+        <p>Your journey to peace,<br>
+          balance & rejuvenation</p>
+        <p>The region’s first fully integrated wellness experience, we offer a unique and holistic approach to mind and
+          body rejuvenation.</p>
+        <p> Nestled within a prime location at Al Zorah, between the majestic mangroves and the calming blue waters, you
+          will find the ultimate wellbeing oasis, VIMOKSHA Health & Wellbeing Resort (Adults only).</p>
+        <button>BOOK NOW </button>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Retreat Programs</h2>
+        <p>VIMOKSHA’s professional medical and wellbeing experts will carry out a full assessment and then they will
+          create a personalized journey designed to best suit your needs and lifestyle.</p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col md-3">
+        <button>Explore Retreats</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/weightmg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Weight Management</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/rejuvenation.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rejuvenation</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/detox.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Detox</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/wellcation.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Wellcation</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-md-9">
+        <h2>Health & Wellbeing</h2>
+        <p>VIMOKSHA’s methods are integrative and holistic, with a range of treatments coming together to create
+          customized wellbeing retreat journeys. Detoxing and therapeutic fasting are central to what we offer, along
+          with physiotherapy, aesthetic medicine, and the right nutrition to boost vitality and vigour.</p>
+      </div>
+      <div class="col-md-3">
+        <button>Explore Treatments</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/health.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Health Optimization</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/k.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aesthetic & Anti-ageing</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/physio.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Physiotherapy</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/fitness.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fitness & Recreation</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/static/images/bodytt.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Body Treatments</h2>
+                <button>EXPLORE</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/static/images/facialtt.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Facial Treatments</h2>
+                <button>EXPLORE</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/static/images/spafc.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Spa Facilities</h2>
+                <button>EXPLORE</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+       
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-md-8">
+        <h2>Exclusive Offers</h2>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <button> Explore Offers</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/offr.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Festive Offers</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/staycation.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Staycation at VIMOKSHA</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/oxygen.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">For a better You</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/images/glowup.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Glow Up for your Skin</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-md-8">
+        <h2>Gallery</h2>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <button>Explore Gallery</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/static/images/bed.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/images/pool.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/images/balcony.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+header{
+    height: 100px;
+    width: 100px;
+    background-image: url(images/pinkflower.jpg);
+} */
+
+/* .navbar {
+    position: absolute;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: rgb(209, 142, 199);
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+} */
+
+/* .btn {
+    color:rgb(209, 142, 199) ;
+    border: 1px rgb(209, 142, 199) solid;
+    text-decoration: none;
+
+} */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 10px;
+}
+
+i{
+    text-decoration: none;
+    color: palevioletred;
+}
